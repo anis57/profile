@@ -1,0 +1,60 @@
+.card-wrapper img{
+    /* width: 150px; */
+    /* padding: 2rem 0rem; */
+    padding-bottom: 3rem;
+
+}
+
+.bg-img{
+    margin-bottom: 20px;
+
+}
+.icon-img {
+    position: absolute;
+    top: 7rem;
+}
+.card-wrapper p{
+    width: 65%;
+   align-items: center;
+    /* border: 1px solid green; */
+    text-align: center;
+    padding-bottom: 1rem
+   
+}
+
+.card-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.card-wrapper{
+    width: 100%;
+    /* border: 1px solid red; */
+    min-height: 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 7%);
+    border-radius: 8px;
+}
+
+.card-wrapper h4{
+    font-size: 0.9rem;
+    color: #111827;
+    width: 90%;
+    text-align: center;
+    
+}
+
+.profile-btn button{
+    background-color:  #3D7793;
+    background-color: #3D7793;
+    padding: 0.7rem 3rem;
+    /* outline: none; */
+    border: none;
+    border-radius: 1px;
+    color: #FFFFFF;
+    margin: 3rem;
+    cursor: pointer;
+}
