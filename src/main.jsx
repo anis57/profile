@@ -1,10 +1,20 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import ProductList from "./Components/Common/Products/ProductList.jsx";
+import ProductDetails from "./Components/Common/ProductDetails/ProductDetails.jsx";
+
+
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<ProductList/>} />
+      <Route path="/product/:id" element={<ProductDetails />} />
+    
+    </Routes>
+  </BrowserRouter>
+);
